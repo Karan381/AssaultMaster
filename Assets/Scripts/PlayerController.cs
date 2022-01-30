@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
         float yOffset = verticalMove * Time.deltaTime * controlspeed;
         float rawYpos = transform.localPosition.y + yOffset;
-        float clampedYpos = Mathf.Clamp(rawYpos, -yRange, yRange - 4.8f);
+        float clampedYpos = Mathf.Clamp(rawYpos, -yRange-3f, yRange-4.8f);
 
 
         transform.localPosition = new Vector3(
