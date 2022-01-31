@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]float controlspeed;
     [SerializeField] float xRange = 5f;
     [SerializeField] float yRange = 5f;
+    [SerializeField] GameObject[] lasers;
     [SerializeField]float postionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -10f;
     [SerializeField] float postionYawFactor = 2f;
@@ -32,6 +33,37 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotaion();
+        ProcessFiring();
+
+    }
+
+    private void ProcessFiring()
+    {
+      if(  Input.GetButton("Fire1"))
+        {
+            ActivateLasers();
+        }
+       else
+        {
+            DeactivateLasers();
+        }
+        
+    }
+
+    private void DeactivateLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(false);
+        }
+    }
+
+    private void ActivateLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(true);
+        }
 
     }
 
