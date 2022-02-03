@@ -216,7 +216,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 0.060005188, z: 0}
+        value: {x: 0, y: 4.798374, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -226,8 +226,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 2
         value: {x: 0, y: 14.989998, z: 0}
-        inSlope: {x: 0, y: 1.844591, z: 0}
-        outSlope: {x: 0, y: 1.844591, z: 0}
+        inSlope: {x: 0, y: 1.8445911, z: 0}
+        outSlope: {x: 0, y: 1.8445911, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -531,7 +531,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.060005188
+        value: 4.798374
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -541,8 +541,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 2
         value: 14.989998
-        inSlope: 1.844591
-        outSlope: 1.844591
+        inSlope: 1.8445911
+        outSlope: 1.8445911
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -1252,7 +1252,7 @@ MonoBehaviour:
     m_Objects: []
   m_InfiniteClipPreExtrapolation: 1
   m_InfiniteClipPostExtrapolation: 1
-  m_InfiniteClipOffsetPosition: {x: 150.3, y: 117.6, z: 137.6}
+  m_InfiniteClipOffsetPosition: {x: 150.3, y: 115, z: 137.6}
   m_InfiniteClipOffsetEulerAngles: {x: -0, y: 0, z: 0}
   m_InfiniteClipTimeOffset: 0
   m_InfiniteClipRemoveOffset: 0

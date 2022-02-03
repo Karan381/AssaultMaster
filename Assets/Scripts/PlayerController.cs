@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     [Tooltip("How Fast Ship Move")][SerializeField]float controlspeed;
     [Tooltip("x axis range on screen")][SerializeField] float xRange = 5f;
     [Tooltip("y axis range on screen")] [SerializeField] float yRange = 5f;
-    [Header("Laser settings")]
-    [SerializeField] GameObject[] lasers;
     [Header("position based turning factor")]
     [SerializeField]float postionPitchFactor = -2f;
     [SerializeField] float postionYawFactor = 2f;
@@ -25,7 +23,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -33,33 +31,6 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotaion();
-        ProcessFiring();
-
-    }
-
-    private void ProcessFiring()
-    {
-      if(  Input.GetButton("Fire1"))
-        {
-            SetLasersActive(true);
-        }
-       else
-        {
-            SetLasersActive(false);
-        }
-        
-    }
-
-    
-
-    private void SetLasersActive(bool isActive)
-    {
-        foreach (GameObject laser in lasers)
-        {
-            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
-            emissionModule.enabled = isActive;
-        }
-
     }
 
     private void ProcessRotaion()
