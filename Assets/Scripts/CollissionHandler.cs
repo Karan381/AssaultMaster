@@ -8,6 +8,8 @@ public class CollissionHandler : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] float loadDelay = 1f;
+    [SerializeField] ParticleSystem boomVFX;
+  
     private void OnTriggerEnter(Collider other)
     {
         startcrashseq();
@@ -15,7 +17,10 @@ public class CollissionHandler : MonoBehaviour
 
     private void startcrashseq()
     {
-        GetComponent<PlayerController>().enabled = false; ;
+        boomVFX.Play();
+        GetComponent<PlayerController>().enabled = false; 
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
         Invoke("ReloadScene", 1f);
     }
 
