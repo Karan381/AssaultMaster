@@ -161,8 +161,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemydedVFX: {fileID: 3200836327345539238, guid: 7e216d1cfb698644a8da4bb78bb8ba31, type: 3}
+  hitVFX: {fileID: 3200836327345539238, guid: 35683eeba57bd024db241489fa5a1a2a, type: 3}
   parent: {fileID: 133058110}
   EnemyScore: 15
+  enemyHitCount: 20
 --- !u!136 &145034935
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -592,8 +594,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemydedVFX: {fileID: 3200836327345539238, guid: 7e216d1cfb698644a8da4bb78bb8ba31, type: 3}
+  hitVFX: {fileID: 3200836327345539238, guid: 35683eeba57bd024db241489fa5a1a2a, type: 3}
   parent: {fileID: 133058110}
   EnemyScore: 10
+  enemyHitCount: 0
 --- !u!1 &1948754353
 GameObject:
   m_ObjectHideFlags: 0
