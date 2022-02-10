@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour
     private void KillEnemy()
     {
             GameObject vfx = Instantiate(enemydedVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parentGameObject.transform;
+            vfx.transform.parent = parentGameObject.transform;
             Destroy(gameObject);
     }
 

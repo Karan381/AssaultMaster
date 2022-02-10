@@ -21,6 +21,7 @@ public class CollissionHandler : MonoBehaviour
         GetComponent<PlayerController>().enabled = false; 
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
+        GetComponent<lasercontrol>().enabled = false;
         Invoke("ReloadScene", 1f);
     }
 
