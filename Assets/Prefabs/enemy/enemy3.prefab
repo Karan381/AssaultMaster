@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d6f7c0e78b4854d9a0294367f707ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemydedVFX: {fileID: 3200836327345539238, guid: 7e216d1cfb698644a8da4bb78bb8ba31, type: 3}
+  enemydedFX: {fileID: 3200836327345539238, guid: 7e216d1cfb698644a8da4bb78bb8ba31, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: 35683eeba57bd024db241489fa5a1a2a, type: 3}
   EnemyScore: 20
   enemyHitCount: 5

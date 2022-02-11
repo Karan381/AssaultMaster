@@ -5,10 +5,12 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] GameObject enemydedVFX;
+    [SerializeField] GameObject enemydedFX;
     [SerializeField] GameObject hitVFX;
     [SerializeField] int EnemyScore;
     [SerializeField] int enemyHitCount = 0;
+    
+
 
     Scoreboard scoreBoard;
     GameObject parentGameObject;
@@ -38,8 +40,8 @@ public class Enemy : MonoBehaviour
 
     private void KillEnemy()
     {
-        scoreBoard.IncreaseScore(EnemyScore);
-        GameObject vfx = Instantiate(enemydedVFX, transform.position, Quaternion.identity);
+            scoreBoard.IncreaseScore(EnemyScore);
+            GameObject vfx = Instantiate(enemydedFX, transform.position, Quaternion.identity);
             vfx.transform.parent = parentGameObject.transform;
             Destroy(gameObject);
     }
@@ -48,7 +50,6 @@ public class Enemy : MonoBehaviour
     {
         GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parentGameObject.transform;
-        
         enemyHitCount--;
     }
 }
