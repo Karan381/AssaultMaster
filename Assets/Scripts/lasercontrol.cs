@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,23 +20,35 @@ public class lasercontrol : MonoBehaviour
 
     void ProcessFiring()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetMouseButton(0))
         {
-            SetLasersActive(true);
+            SetLasersActive();
         }
         else
         {
-            SetLasersActive(false);
+            SetLasersDeactive();
         }
 
     }
-     void SetLasersActive(bool isActive)
+
+    void SetLasersActive()
     {
         foreach (GameObject laser in lasers)
         {
             var emissionModule = laser.GetComponent<ParticleSystem>().emission;
-            emissionModule.enabled = isActive;
+            emissionModule.enabled = true;
+        }
+    }
+
+    void SetLasersDeactive()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = false;
         }
 
     }
+
+    
 }

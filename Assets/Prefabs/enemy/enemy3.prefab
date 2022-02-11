@@ -72,7 +72,7 @@ Transform:
   m_GameObject: {fileID: 6009390830415371620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.667893, y: -46.902416, z: 77.16293}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children:
   - {fileID: 6013079609039196806}
   m_Father: {fileID: 0}
@@ -141,7 +141,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemydedVFX: {fileID: 3200836327345539238, guid: 7e216d1cfb698644a8da4bb78bb8ba31, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: 35683eeba57bd024db241489fa5a1a2a, type: 3}
-  parent: {fileID: 0}
   EnemyScore: 20
   enemyHitCount: 5
 --- !u!1 &6009431546246352684

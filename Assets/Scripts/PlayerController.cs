@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [Header("input based turning factor")]
     [SerializeField] float controlPitchFactor = -10f;
     [SerializeField] float controlRollFactor = -20f;
+    
 
     float horizontalMove;
     float verticalMove;
@@ -31,8 +32,10 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotaion();
+       
     }
 
+    
     private void ProcessRotaion()
     {
         float pitchDuetoPostion = transform.localPosition.y * postionPitchFactor;

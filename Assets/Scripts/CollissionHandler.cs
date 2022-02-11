@@ -12,22 +12,30 @@ public class CollissionHandler : MonoBehaviour
   
     private void OnTriggerEnter(Collider other)
     {
+        
         startcrashseq();
     }
 
     private void startcrashseq()
     {
         boomVFX.Play();
-        GetComponent<PlayerController>().enabled = false; 
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<BoxCollider>().enabled = false;
-        GetComponent<lasercontrol>().enabled = false;
+        //  GetComponent<lasercontrol>().enabled = false;
+        // GetComponent<PlayerController>().enabled = false; 
+        // GetComponent<MeshRenderer>().enabled = false;
+        //GetComponent<BoxCollider>().enabled = false;
+        Invoke("DestroyPlane", .5f);
         Invoke("ReloadScene", 1f);
     }
 
     void ReloadScene()
     {
+        
         int currentsceneindex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentsceneindex);
+    }
+
+   void DestroyPlane()
+    {
+        gameObject.SetActive(false);
     }
 }
