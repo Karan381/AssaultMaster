@@ -280,12 +280,16 @@ PlayableDirector:
     value: {fileID: 1510967354}
   m_ExposedReferences:
     m_References:
+    - 8b0b59e925759c7468416eaa93397e35: {fileID: 1913070676}
     - 58a71faf98cba4a42a41003f4d4dcc65: {fileID: 66726633}
     - 9d1c31bf9e3cfd6468824784bc4c1f5a: {fileID: 1490777037}
     - 5d4f976a6668b3546805714e9f61b57b: {fileID: 682688058}
     - f49546ed95b5a564facfec6dacda082d: {fileID: 458218817}
+    - e144c43c080a62749acdc219c04d537d: {fileID: 1913070676}
     - f8f8b09b4db28ce4c916ce435ff08778: {fileID: 1490777037}
     - c4e615b92a1aad54abb44fd4fccfb53c: {fileID: 114491764}
+    - edc2c771e2e2a6340a720a6b58095edb: {fileID: 1913070676}
+    - 8d5ac75de22e59346b5ce2142ea0dbc2: {fileID: 1913070676}
     - 1584d91a7c6346e46a8335a0887fa2c3: {fileID: 24111690}
     - d8e9c7df720c72947a6fb6663851aed5: {fileID: 1168986604}
     - df02500341811564b904d5d16eedf8a5: {fileID: 1490777037}
@@ -574,6 +578,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19b3b6320ea1de4499902fdc24a2018f, type: 3}
+--- !u!1 &1913070676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4926530827805637394, guid: 8516a5f10cb68a949963eea672c45410, type: 3}
+  m_PrefabInstance: {fileID: 9209408713138550845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1948754353
 GameObject:
   m_ObjectHideFlags: 0
